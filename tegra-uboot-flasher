@@ -187,6 +187,7 @@ def func_flash():
     gen_flashcmd = gen_flashcmds[flash_type]
 
     if args.work_dir:
+        workdir = args.work_dir
         mkdir(workdir)
     else:
         workdir = tempfile.mkdtemp()
